@@ -1,0 +1,17 @@
+{
+  "name": "fields",
+  "version": "0.0.1",
+  "dependencies": {
+    "ghost-app"     : "git+https://github.com/nchaulet/Ghost-App.git",
+    "showdown-ghost": "^0.4.0",
+    "gray-matter"   : "^2.0.0"
+  },
+  "ghost": {
+    "permissions": {
+      "filters": [
+        "prePostsRender",
+        "rss.feed"
+      ]
+    }
+  }
+}
