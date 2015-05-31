@@ -1,18 +1,10 @@
-var App = require('ghost-app'),
-    MyApp;
+var App       = require('ghost-app'),
+    Showdown  = require('showdown-ghost'),
+    converter = new Showdown.converter({extensions: ['ghostgfm', 'footnotes', 'highlight']}),
+    matter    = require('gray-matter');
 
-
-var Showdown   = require('showdown-ghost'),
-converter      = new Showdown.converter({extensions: ['ghostgfm', 'footnotes', 'highlight']});
-
-var matter = require('gray-matter');
-
-MyApp = App.extend({
-
-    install: function () {
-
-    },
-
+var MyApp = App.extend({
+    install: function () {},
     uninstall: function () {},
 
     activate: function () {
@@ -56,7 +48,6 @@ MyApp = App.extend({
     },
 
     deactivate: function () {}
-
 });
 
 module.exports = MyApp;
