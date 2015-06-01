@@ -19,3 +19,13 @@ another_key2: 10
 
 Front matter is awesome
 ```
+
+Then you could use the `data`property of the post object in yours template
+
+post.hbs
+```handlebars
+<div>{{data.yaml_key}}</div>
+```
+
+
+
