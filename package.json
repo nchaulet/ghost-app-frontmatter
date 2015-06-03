@@ -1,5 +1,5 @@
 {
-  "name": "fields",
+  "name": "ghost-app-frontmatter",
   "version": "0.0.1",
   "dependencies": {
     "ghost-app"     : "git+https://github.com/nchaulet/Ghost-App.git",
